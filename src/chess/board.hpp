@@ -8,6 +8,9 @@
 using SquareMatrix = std::vector<std::vector<Square>>;
 
 
+enum class Side;
+
+
 class Board
 {
 private:
@@ -24,5 +27,9 @@ public:
 
 
 private:
-	static SquareMatrix generateDefaultSquareMatrix() noexcept;
+	static SquareMatrix generateDefaultSquareMatrix(bool setupPieces = true) noexcept;
+
+	static void setDefaultPieceSetup(SquareMatrix& squares) noexcept;
+	static void setDefaultFirstRowPieceSetup(std::vector<Square>& row, Side side) noexcept;
+	static void setDefaultSecondRowPawnSequence(std::vector<Square>& row, Side side) noexcept;
 };

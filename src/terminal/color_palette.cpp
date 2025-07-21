@@ -9,7 +9,7 @@ ColorPalette ColorPalette::defaultTheme() noexcept
 	return ColorPalette {
 		.whiteSquare = "\x1b[48;5;253m",
 		.blackSquare = "\x1b[48;5;35m",
-		.whitePiece = "\x1b[38;5;25m",
-		.blackPiece = "\x1b[38;5;245m"
+		.whitePiece = "\x1b[38;5;249m",
+		.blackPiece = "\x1b[38;5;25m"
 	};
 }

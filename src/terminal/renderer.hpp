@@ -11,6 +11,9 @@ class Square;
 struct Position;
 
 
+enum class Side;
+
+
 class BoardRenderer
 {
 private:
@@ -29,5 +32,5 @@ private:
 	std::string renderSquare(const Square& square) const noexcept;
 
 	std::string getSquareColorForPosition(const Position& position) const noexcept;
-	std::string getPieceColorForPosition(const Position& position) const noexcept;
+	std::string getPieceColorForSide(Side side) const noexcept;
 };
