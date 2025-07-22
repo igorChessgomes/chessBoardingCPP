@@ -21,7 +21,7 @@ public:
 	Board() noexcept;
 
 
-	const SquareMatrix& getSquares() const noexcept;
+	const SquareMatrix& squares() const noexcept;
 
 	void setSquares(const SquareMatrix& squares) noexcept;
 

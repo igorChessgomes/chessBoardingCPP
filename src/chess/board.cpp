@@ -14,7 +14,7 @@ Board::Board() noexcept
 }
 
 
-const SquareMatrix& Board::getSquares() const noexcept { return _squares; }
+const SquareMatrix& Board::squares() const noexcept { return _squares; }
 
 
 void Board::setSquares(const SquareMatrix& squares) noexcept { _squares = squares; }
